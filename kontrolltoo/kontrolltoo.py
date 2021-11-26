@@ -34,7 +34,7 @@
 from random import *
 max=0
 min=5
-k=randint(1,27)
+k=randint(1,30)
 for i in range(k):
     ocenka=randint(1,5)
     if ocenka<5:
@@ -46,8 +46,8 @@ for i in range(k):
     if ocenka<min:
         min=ocenka
 print()
-print("Минимальная оценка: ", min)
-print("Максимальная оценка: ", max)
+print("Минимальная оценка --> ", min)
+print("Максимальная оценка --> ", max)
  
  
 #a=0
