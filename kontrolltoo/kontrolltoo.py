@@ -31,34 +31,33 @@
 # print(k)
 # i += 3
 
-#from random import *
-#maxOcenka=0
-#minOcenka=5
-#kolvo=randint(1,27)
-#for i in range(kolvo):
-#    ocenka=randint(1,5)
-#    if ocenka<5:
-#        ocenka=ocenka+random()
-#        ocenka=round(ocenka)
-#    print(ocenka, end=" ")
-#    if ocenka>maxOcenka:
-#        maxOcenka=ocenka
-#    if ocenka<minOcenka:
-#        minOcenka=ocenka
+from random import *
+max=0
+min=5
+k=randint(1,27)
+for i in range(k):
+    ocenka=randint(1,5)
+    if ocenka<5:
+        ocenka=ocenka+random()
+        ocenka=round(ocenka)
+    print(ocenka, end=" ")
+    if ocenka>max:
+        max=ocenka
+    if ocenka<min:
+        min=ocenka
+print()
+print("Минимальная оценка: ", min)
+print("Максимальная оценка: ", max)
+ 
+ 
+#a=0
+#K=int(input("Сколько котлет у тебя есть? --> "))
+#M=int(input("Сколько котлет помещается на сковородку? --> "))
+#for i in range(K):
+#    a=K//M
 #print()
-#print("Минимальная оценка: ", minOcenka)
-#print("Максимальная оценка: ", maxOcenka)
- 
- 
-a=0
-K=int(input("Сколько котлет у тебя есть? --> "))
-M=int(input("Сколько котлет помещается на сковородку? --> "))
-for i in range(K):
-    a=K//M
-print()
-print(f"Понадобится {a} сковородки ")
-for i in range(K):
-    b=K%M
-print(f"Останется сделать {b} котлет ")
-print()
-
+#print(f"Понадобится {a} сковородки ")
+#for i in range(K):
+#    b=K%M
+#print(f"Останется сделать {b} котлет ")
+#print()
